@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5fab77878c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br><span>Akshay Gulhane</span></h1>
+            </div>
+        </div>
+        <!-- ---------------------About------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <h2>I am currently in my final year of pursuing a degree in Computer Technology at YCCE. I have a
+                            strong interest in programming and web technology. My technical skills include proficiency
+                            in
+                            programming languages such as C, Java, C++, and Python, as well as frameworks like HTML,
+                            CSS,
+                            and JavaScript. I have successfully built projects using these languages and frameworks,
+                            demonstrating my ability to apply my knowledge in practical scenarios.
+                        </h2>
+                        <h2>
+
+                            Currently, I am focusing on enhancing my problem-solving skills in Data Structures and
+                            Algorithms (DSA). In the future, I aspire to become a full-stack web developer, leveraging
+                            my
+                            diverse skill set to create robust and innovative web applications.
+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -----------skills---------- -->
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <i class="fa-solid fa-laptop"></i>
+                        <h2>Technical Skills</h2>
+                        <h3>Programming languages : Java, C, C++, Python, HTML/CSS, JavaScript, SQL</h3>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Other Skills</h2>
+                        <h3>DSA, problem-solving, Front-End, Typing </h3>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------project------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3> Debt Record Project</h3>
+                            <h3>This (DSA) based project aims to track the records of an
+                                individual's debt. In this project, we can add a person's name, phone number, and their
+                                debt details. This project leverages efficient data structures to manage and update debt
+                                records seamlessly. </h3>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Temperature Converter webpage</h3>
+                            <h3>This is a simple front-end project developed using HTML, CSS, and JavaScript to convert
+                                temperatures between Celsius, Fahrenheit, and Kelvin. The project provides a
+                                user-friendly interface for easy and accurate temperature conversion. </h3>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------contact---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>gulhaneakshay55@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AkshayGulhane555"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://leetcode.com/Akshay_Gulhane/"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <a href="" class="btn btn2">Download CV</a>
+                    </div>
+                    <!--------Form----- -->
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>We appreciate
+                    your presence to explore my website - Thank you for being here.<i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+        <script>
+
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyONcMUEGyid4H2tl-b06JlD9gap96aUVy5wqmUx4EYtav9ZvwTeZBzfiIK3kBRCEX_/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+</body>
+
+</html>
